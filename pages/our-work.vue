@@ -88,7 +88,6 @@ function isNotMobileScreen(): boolean {
            class="image-fluid" 
            width="1300" 
            height="720"
-           loading="lazy"
            />
         </div>
       </Slide>
@@ -106,7 +105,6 @@ function isNotMobileScreen(): boolean {
                 width="450" 
                 height="200"
                 sizes="md:400px"
-                loading="lazy"
             />
           </div>
         </Slide>
@@ -207,6 +205,7 @@ function isNotMobileScreen(): boolean {
               class="image-fluid" 
               width="1300" 
               height="720"
+              loading="lazy"
             />
           </div>
         </Slide>
@@ -223,6 +222,7 @@ function isNotMobileScreen(): boolean {
               class="image-fluid"
               width="450" 
               height="200"
+              loading="lazy"
               />
             </div>
           </Slide>
