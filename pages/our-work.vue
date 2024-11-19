@@ -37,22 +37,22 @@ let thumbnailsConfig = {
 const currentSlide: Ref = ref(0);
 const slideTo = (nextSlide: number) => (currentSlide.value = nextSlide);
 const imagesPath: string = "/img/images/img";
-const imagesAmount: number = 156;
+const imagesAmount: number = 99;
 
 const currentSlide2: Ref = ref(0);
 const slideTo2 = (nextSlide: number) => (currentSlide2.value = nextSlide);
 const imagesPath2: string = "/img/images2/img";
-const imagesAmount2: number = 116;
+const imagesAmount2: number = 114;
 
 const currentSlide3: Ref = ref(0);
 const slideTo3 = (nextSlide: number) => (currentSlide3.value = nextSlide);
 const imagesPath3: string = "/img/images3/img";
-const imagesAmount3: number = 110;
+const imagesAmount3: number = 97;
 
-const currentSlide4 = ref(0);
+const currentSlide4: Ref = ref(0);
 const slideTo4 = (nextSlide: number) => (currentSlide4.value = nextSlide);
 const imagesPath4: string = "/img/images4/img";
-const imagesAmount4: number = 25;
+const imagesAmount4: number = 18;
 
 function beforeInit(): void {
 
@@ -77,40 +77,43 @@ function isNotMobileScreen(): boolean {
 
   <div class="container">
     <div class="row mt-5 mb-5">
-      <Carousel id="gallery" 
+      <Carousel id="gallery3" 
         v-bind="galleryConfig" 
-        v-model="currentSlide"
+        v-model="currentSlide3"
         v-if="isNotMobileScreen()"
       >
-        <Slide v-for="imageId in imagesAmount" :key="imageId">
-          <div class="carousel__item">
-            <NuxtImg :src="imagesPath + imageId + '.jpg' "
-              class="image-fluid" 
-              width="1300" 
-              height="720"
+      <Slide v-for="imageId3 in imagesAmount3" :key="imageId3">
+        <div class="carousel__item">
+          <NuxtImg :src="imagesPath3 + imageId3 + '.jpg' "
+           class="image-fluid" 
+           width="1300" 
+           height="720"
+           loading="lazy"
+           />
+        </div>
+      </Slide>
+      </Carousel>
+
+      <Carousel id="thumbnails3"
+       v-bind="thumbnailsConfig" 
+       v-model="currentSlide3"
+       @init="beforeInit" 
+       >
+        <Slide v-for="imageId3 in imagesAmount3" :key="imageId3">
+          <div class="carousel__item" @click="slideTo3(imageId3 - 1)">
+            <NuxtImg :src="imagesPath3 + imageId3 + '.jpg' " 
+              class="image-fluid"
+                width="450" 
+                height="200"
+                sizes="md:400px"
+                loading="lazy"
             />
           </div>
         </Slide>
-      </Carousel>
-      <Carousel id="thumbnails"
-        v-bind="thumbnailsConfig" 
-        v-model="currentSlide"
-        @init="beforeInit" 
-       >
-          <Slide v-for="imageId in imagesAmount" :key="imageId">
-            <div class="carousel__item" @click="slideTo(imageId - 1)">
-              <NuxtImg :src="imagesPath + imageId + '.jpg' " 
-              sizes="md:400px"
-              class="image-fluid"
-              width="450" 
-              height="200"
-              />
-            </div>
-          </Slide>
 
-          <template #addons>
-            <Navigation />
-          </template>
+        <template #addons>
+          <Navigation />
+        </template>
       </Carousel>
     </div>
     <div class="row mt-5 mb-5">
@@ -193,43 +196,40 @@ function isNotMobileScreen(): boolean {
       </Carousel>
     </div>
     <div class="row mt-5 mb-5">
-      <Carousel id="gallery3" 
+      <Carousel id="gallery" 
         v-bind="galleryConfig" 
-        v-model="currentSlide3"
+        v-model="currentSlide"
         v-if="isNotMobileScreen()"
       >
-      <Slide v-for="imageId3 in imagesAmount3" :key="imageId3">
-        <div class="carousel__item">
-          <NuxtImg :src="imagesPath3 + imageId3 + '.jpg' "
-           class="image-fluid" 
-           width="1300" 
-           height="720"
-           loading="lazy"
-           />
-        </div>
-      </Slide>
-      </Carousel>
-
-      <Carousel id="thumbnails3"
-       v-bind="thumbnailsConfig" 
-       v-model="currentSlide3"
-       @init="beforeInit" 
-       >
-        <Slide v-for="imageId3 in imagesAmount3" :key="imageId3">
-          <div class="carousel__item" @click="slideTo3(imageId3 - 1)">
-            <NuxtImg :src="imagesPath3 + imageId3 + '.jpg' " 
-              class="image-fluid"
-                width="450" 
-                height="200"
-                sizes="md:400px"
-                loading="lazy"
+        <Slide v-for="imageId in imagesAmount" :key="imageId">
+          <div class="carousel__item">
+            <NuxtImg :src="imagesPath + imageId + '.jpg' "
+              class="image-fluid" 
+              width="1300" 
+              height="720"
             />
           </div>
         </Slide>
+      </Carousel>
+      <Carousel id="thumbnails"
+        v-bind="thumbnailsConfig" 
+        v-model="currentSlide"
+        @init="beforeInit" 
+       >
+          <Slide v-for="imageId in imagesAmount" :key="imageId">
+            <div class="carousel__item" @click="slideTo(imageId - 1)">
+              <NuxtImg :src="imagesPath + imageId + '.jpg' " 
+              sizes="md:400px"
+              class="image-fluid"
+              width="450" 
+              height="200"
+              />
+            </div>
+          </Slide>
 
-        <template #addons>
-          <Navigation />
-        </template>
+          <template #addons>
+            <Navigation />
+          </template>
       </Carousel>
     </div>
   </div>
