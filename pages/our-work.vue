@@ -37,7 +37,7 @@ let thumbnailsConfig = {
 const currentSlide: Ref = ref(0);
 const slideTo = (nextSlide: number) => (currentSlide.value = nextSlide);
 const imagesPath: string = "/img/images/img";
-const imagesAmount: number = 99;
+const imagesAmount: number = 98;
 
 const currentSlide2: Ref = ref(0);
 const slideTo2 = (nextSlide: number) => (currentSlide2.value = nextSlide);
