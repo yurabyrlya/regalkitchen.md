@@ -58,14 +58,10 @@ function beforeInit(): void {
 
 }
 
-function getItemsToShow(): number {
-  const width:number = window.innerWidth;
-  if (width >= 1200) return 4; // Desktop
-  if (width >= 768) return 3;  // Tablet
-  return 1;                    // Mobile
-}
-
 function isNotMobileScreen(): boolean {
+  if (!window) {
+    return false;
+  }
   return window.innerWidth >= 768;
 }
 
