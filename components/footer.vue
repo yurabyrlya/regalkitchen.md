@@ -9,7 +9,7 @@
                             <img width="320" src="/img/logos/regal_logo.svg"></img>
                         </NuxtLink>
                         <p class="lh-lg mb-4 mt-3">We specialize in delivering state-of-the-art <br> German kitchen designs and installations. </p>
-                        <div class="footer-icon d-flex">
+                        <div class="footer-icon d-flex mb-4">
                             <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
                             <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
