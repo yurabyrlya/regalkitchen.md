@@ -8,12 +8,12 @@
                 </div>
                 <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
-                    <h1 class="display-5 mb-4">We are studio.md</h1>
+                    <h1 class="display-5 mb-4">We are <span class="text-capitalize">regal kitchen</span> </h1>
                     <p class="mb-4">From the living room to the dining room to the kitchen and bathroom: our flexible 
                         furniture system and the large selection of fronts and surfaces make it possible to create your home 
                         in a consistent style or a completely different style for each room. Experience intelligently
                         constructed furniture in a good design. For every taste and at an attractive price-performance ratio. 
-                        And in the usual quality. studio.md furniture is made in Germany.
+                        And in the usual quality <span class="text-capitalize">regal kitchen </span>furniture is made in Germany.
                     </p>
                     <div class="row g-4 text-dark mb-5">
                         <div class="col-sm-6">

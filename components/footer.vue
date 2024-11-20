@@ -6,9 +6,9 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="footer-item">
                         <NuxtLink to="/" class="navbar-brand">
-                            <img width="300" src="/img/logo.svg"></img>
+                            <img width="320" src="/img/logos/regal_logo.svg"></img>
                         </NuxtLink>
-                        <p class="lh-lg mb-4">We specialize in delivering state-of-the-art German kitchen designs and installations. </p>
+                        <p class="lh-lg mb-4 mt-3">We specialize in delivering state-of-the-art <br> German kitchen designs and installations. </p>
                         <div class="footer-icon d-flex">
                             <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -49,7 +49,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Studio.md</a>, All right reserved.</span>
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i><span class="text-capitalize">regal kitchen</span></a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
                     Developed by <a href="https://www.linkedin.com/in/iuri-birlea">Iuri Birlea </a>

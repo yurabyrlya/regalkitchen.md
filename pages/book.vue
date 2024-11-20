@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <Hero title="Book an install"/>
+  <Hero title="Submit a Request"/>
   <Book/>
   <Footer/>
   <BackToTop/>
