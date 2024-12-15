@@ -1,5 +1,9 @@
 <script setup lang="ts">
+    import type {Locale} from '@nuxtjs/i18n';
+    import { ref, Ref } from 'vue';
+
     const route = useRoute()
+    const { setLocale } = useI18n()
 
     function active(page: String): String {
      
@@ -7,6 +11,22 @@
             return 'active'
         }
         return '';
+    }
+
+    let lang: Ref<string> = ref('English');
+
+    function setLang(locale: Locale): void {
+        setLocale(locale).then(() => {
+        if (locale === 'ro') {
+            lang.value = 'Romanian';
+        } else if (locale === 'ru') {
+            lang.value = 'Russian';
+        } else {
+            lang.value = 'English';
+        }
+        }).catch((error) => {
+            console.error('Error while setting locale:', error);
+        });
     }
 
 </script>
@@ -24,15 +44,31 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <NuxtLink to="/" class="nav-item nav-link" :class="active('index')">Home</NuxtLink>
-                        <NuxtLink to="/about" class="nav-item nav-link" :class="active('about')">About</NuxtLink>
-                        <NuxtLink to="/service" class="nav-item nav-link" :class="active('service')">Services</NuxtLink>
-                        <NuxtLink to="/kitchens" class="nav-item nav-link" :class="active('kitchens')">Kitchens</NuxtLink>
-                        <NuxtLink to="/our-work" class="nav-item nav-link" :class="active('our-work')">Our work</NuxtLink>
-                        <NuxtLink to="/contact" class="nav-item nav-link" :class="active('contact')">Contact</NuxtLink>
+                        <NuxtLink to="/" class="nav-item nav-link" :class="active('index')">{{ $t('home') }}</NuxtLink>
+                        <NuxtLink to="/about" class="nav-item nav-link" :class="active('about')">{{ $t('about') }}</NuxtLink>
+                        <NuxtLink to="/service" class="nav-item nav-link" :class="active('service')">{{ $t('services') }}</NuxtLink>
+                        <NuxtLink to="/kitchens" class="nav-item nav-link" :class="active('kitchens')">{{ $t('kitchens') }}</NuxtLink>
+                        <NuxtLink to="/our-work" class="nav-item nav-link" :class="active('our-work')">{{ $t('ourWork') }}</NuxtLink>
+                        <NuxtLink to="/contact" class="nav-item nav-link" :class="active('contact')">{{ $t('contact') }}</NuxtLink>
                     </div>
                     <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
-                    <NuxtLink to="/book" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Submit a Request</NuxtLink>
+                    <NuxtLink to="/book" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">{{ $t('submitRequest') }}</NuxtLink>
+                    <div class="dropdown ms-auto" id="lang">
+                    <a 
+                        class="btn dropdown-toggle" 
+                        type="button"
+                        id="dropdownMenuButton1" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"
+                    >
+                        {{ lang }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#" @click="setLang('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" @click="setLang('ro')">Romanian</a></li>
+                        <li><a class="dropdown-item" href="#" @click="setLang('ru')">Russian</a></li>
+                    </ul>
+                </div>
                 </div>
             </nav>
         </div>
@@ -45,6 +81,8 @@
 
 </script>
 
-<style>
-
+<style scoped>
+    #lang {
+      min-width: 120px;
+    }
 </style>
