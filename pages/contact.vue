@@ -26,21 +26,21 @@
                                     <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
                                     <div class="">
                                         <h4>Address</h4>
-                                        <p>123 Street, Chisinau, Moldova</p>
+                                        <p>Str. Chisinăului 64, Cricova, Moldova</p>
                                     </div>
                                 </div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
                                     <i class="fas fa-envelope fa-2x text-primary me-4"></i>
                                     <div class="">
                                         <h4>Mail Us</h4>
-                                        <p class="mb-2">info@example.com</p>
+                                        <p class="mb-2">regalkitch3n@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded">
                                     <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
                                     <div class="">
                                         <h4>Telephone</h4>
-                                        <p class="mb-2">(+373) 3456 7890 123</p>
+                                        <p class="mb-2">(+373) 611 377 74</p>
                                     </div>
                                 </div>
                             </div>

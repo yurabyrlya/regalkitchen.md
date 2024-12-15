@@ -32,9 +32,9 @@
                     <div class="footer-item">
                         <h4 class="mb-4">Contact Us</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, Chisinau, Moldova</p>
-                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (+373) 3456 7890 123</p>
-                            <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Str. Chisinăului 64, Cricova, Moldova</p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (+373) 611 377 74</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> regalkitch3n@gmail.com</p>
                             <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
                         </div>
                     </div>
