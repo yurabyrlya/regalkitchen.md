@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <Hero title="About us"/>
+  <Hero :title="$t('about')"/>
   <About/>
   <Footer/>
   <BackToTop/>

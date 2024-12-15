@@ -8,7 +8,7 @@
                         <NuxtLink to="/" class="navbar-brand">
                             <img width="320" src="/img/logos/regal_logo.svg"></img>
                         </NuxtLink>
-                        <p class="lh-lg mb-4 mt-3">We specialize in delivering state-of-the-art <br> German kitchen designs and installations. </p>
+                        <p class="lh-lg mb-4 mt-3">{{ $t('specializeInGermanKitchenDesigns') }} </p>
                         <div class="footer-icon d-flex mb-4">
                             <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -19,23 +19,23 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="footer-item">
-                        <h4 class="mb-4">What We Offer</h4>
+                        <h4 class="mb-4">{{ $t('whatWeOffer') }}</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Custom German Kitchen Designs</a>
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Modular Kitchen Installations</a>
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Premium Kitchen Renovations</a>
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>High-Quality Kitchen Fittings</a>
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>{{ $t('customDesign') }}</a>
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>{{ $t('modularKitchenInstallations') }}</a>
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>{{ $t('premiumKitchenRenovations') }}</a>
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>{{ $t('highQualityKitchenFittings') }}</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="footer-item">
-                        <h4 class="mb-4">Contact Us</h4>
+                        <h4 class="mb-4">{{ $t('contact') }}</h4>
                         <div class="d-flex flex-column align-items-start">
                             <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Str. Chisinăului 64, Cricova, Moldova</p>
                             <p><i class="fa fa-phone-alt text-primary me-2"></i> (+373) 611 377 74</p>
                             <p><i class="fas fa-envelope text-primary me-2"></i> regalkitch3n@gmail.com</p>
-                            <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                            <p><i class="fa fa-clock text-primary me-2"></i> {{ $t('support') }}</p>
                         </div>
                     </div>
                 </div>

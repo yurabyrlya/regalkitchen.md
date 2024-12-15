@@ -69,7 +69,7 @@ function isNotMobileScreen(): boolean {
 
 <template>
   <Navbar/>
-  <Hero title="Our work"/>
+  <Hero :title="$t('ourWork')"/>
 
   <div class="container">
     <div class="row mt-5 mb-5">

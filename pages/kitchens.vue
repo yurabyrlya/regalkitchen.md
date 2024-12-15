@@ -1,7 +1,7 @@
 <template>
   <Navbar/>
-  <Hero title="Kitchens"/>
-    <Category/>
+  <Hero :title="$t('kitchens')"/>
+  <Category/>
   <Footer/>
   <BackToTop/>
 </template>

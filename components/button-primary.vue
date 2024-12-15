@@ -12,9 +12,9 @@
 </script>
 
 <template>
-    <a :href="href" 
+    <NuxtLink :to="href" 
       class="btn btn-primary py-3 px-5 rounded-pill"
       > {{ title }}
         <i class="fas fa-arrow-right ps-2"></i>
-    </a>  
+    </NuxtLink>  
 </template>

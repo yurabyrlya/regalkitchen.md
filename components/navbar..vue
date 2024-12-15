@@ -3,7 +3,7 @@
     import { ref, Ref } from 'vue';
 
     const route = useRoute()
-    const { setLocale } = useI18n()
+    const { setLocale, locale } = useI18n()
 
     function active(page: String): String {
      
@@ -12,23 +12,6 @@
         }
         return '';
     }
-
-    let lang: Ref<string> = ref('English');
-
-    function setLang(locale: Locale): void {
-        setLocale(locale).then(() => {
-        if (locale === 'ro') {
-            lang.value = 'Romanian';
-        } else if (locale === 'ru') {
-            lang.value = 'Russian';
-        } else {
-            lang.value = 'English';
-        }
-        }).catch((error) => {
-            console.error('Error while setting locale:', error);
-        });
-    }
-
 </script>
 
 <template>
@@ -55,18 +38,18 @@
                     <NuxtLink to="/book" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">{{ $t('submitRequest') }}</NuxtLink>
                     <div class="dropdown ms-auto" id="lang">
                     <a 
-                        class="btn dropdown-toggle" 
+                        class="btn dropdown-toggle text-capitalize" 
                         type="button"
                         id="dropdownMenuButton1" 
                         data-bs-toggle="dropdown" 
                         aria-expanded="false"
                     >
-                        {{ lang }}
+                        {{ locale }}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#" @click="setLang('en')">English</a></li>
-                        <li><a class="dropdown-item" href="#" @click="setLang('ro')">Romanian</a></li>
-                        <li><a class="dropdown-item" href="#" @click="setLang('ru')">Russian</a></li>
+                        <li><a class="dropdown-item" href="#" @click="setLocale('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" @click="setLocale('ro')">Romanian</a></li>
+                        <li><a class="dropdown-item" href="#" @click="setLocale('ru')">Russian</a></li>
                     </ul>
                 </div>
                 </div>

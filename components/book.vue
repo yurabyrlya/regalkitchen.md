@@ -8,38 +8,37 @@
                 <div class="col-10">
                     <div class="border border-primary bg-light py-5 px-4">
                         <div class="text-center">
-                            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Submit a Request</small>
-                            <h1 class="display-5 mb-5">Request Form</h1>
+                            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{ $t('submitRequest') }}</small>
+                            <h1 class="display-5 mb-5">{{ $t('requestForm') }}</h1>
                         </div>
                         <form action="#">
                             <div class="row g-4 form">
                                 <div class="col-lg-4 col-md-6">
                                     <input type="name"
                                      class="form-control border-primary p-2" 
-                                     placeholder="Enter Your Name"
+                                     :placeholder="$t('enterName')"
                                      required
                                      >
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <input type="email"
                                     class="form-control border-primary p-2" 
-                                    placeholder="Enter Your Email"
+                                    :placeholder="$t('enterEmail')"
                                     required
                                     >
                                 </div>    
                                 <div class="col-lg-4 col-md-6">
                                     <select class="form-select border-primary p-2"
-                                    aria-label="Default select example"
                                     required
                                     >
-                                        <option selected>Select Country</option>
+                                        <option selected>{{ $t('selectCountry') }}</option>
                                         <option value="1">Moldova</option>
                                         <option value="2">UK</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <select class="form-select border-primary p-2" aria-label="Default select example">
-                                        <option selected>Select City</option>
+                                        <option selected>{{ $t('selectCity') }}</option>
                                         <option value="1">Belfast</option>
                                         <option value="2">Cahul</option>
                                         <option value="3">Chisinau</option>
@@ -48,7 +47,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <input type="mobile"
                                      class="form-control border-primary p-2" 
-                                     placeholder="Enter Your Contact No."
+                                     :placeholder="$t('contactNumber')"
                                      >
                                 </div>
                                 <div class="col-lg-4 col-md-6">
@@ -59,7 +58,7 @@
                                 </div>
                                 <div class="col-12 text-center">
                                     <button type="submit" 
-                                    class="btn btn-primary px-5 py-3 rounded-pill">Sumbit</button>
+                                    class="btn btn-primary px-5 py-3 rounded-pill">{{ $t('submit') }}</button>
                                 </div>
                             </div>
                         </form>
