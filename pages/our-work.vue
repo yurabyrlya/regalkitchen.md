@@ -47,7 +47,7 @@ const imagesAmount2: number = 114;
 const currentSlide3: Ref = ref(0);
 const slideTo3 = (nextSlide: number) => (currentSlide3.value = nextSlide);
 const imagesPath3: string = "/img/images3/img";
-const imagesAmount3: number = 97;
+const imagesAmount3: number = 78;
 
 const currentSlide4: Ref = ref(0);
 const slideTo4 = (nextSlide: number) => (currentSlide4.value = nextSlide);
