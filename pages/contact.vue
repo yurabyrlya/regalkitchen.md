@@ -36,21 +36,21 @@
                         <div class="col-md-6 col-lg-5">
                             <div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
-                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
                                     <div class="">
                                         <h5>{{ $t('address') }}</h5>
                                         <p class="contact-info">Str. Chisinăului 64, Cricova, Moldova</p>
                                     </div>
                                 </div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
-                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                    <i class="fas fa-envelope fa-2x text-primary me-3"></i>
                                     <div class="">
                                         <h5>{{ $t('email') }}</h5>
                                         <p class="mb-2 contact-info">regalkitch3n@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded">
-                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <i class="fa fa-phone-alt fa-2x text-primary me-3"></i>
                                     <div class="">
                                         <h5>{{ $t('telephone') }}</h5>
                                         <p class="mb-2 contact-info">(+373) 611 377 74</p>
