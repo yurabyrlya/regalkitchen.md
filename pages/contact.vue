@@ -38,22 +38,22 @@
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
                                     <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
                                     <div class="">
-                                        <h4>{{ $t('address') }}</h4>
-                                        <p>Str. Chisinăului 64, Cricova, Moldova</p>
+                                        <h5>{{ $t('address') }}</h5>
+                                        <p class="contact-info">Str. Chisinăului 64, Cricova, Moldova</p>
                                     </div>
                                 </div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
                                     <i class="fas fa-envelope fa-2x text-primary me-4"></i>
                                     <div class="">
-                                        <h4>{{ $t('email') }}</h4>
-                                        <p class="mb-2">regalkitch3n@gmail.com</p>
+                                        <h5>{{ $t('email') }}</h5>
+                                        <p class="mb-2 contact-info">regalkitch3n@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded">
                                     <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
                                     <div class="">
-                                        <h4>{{ $t('telephone') }}</h4>
-                                        <p class="mb-2">(+373) 611 377 74</p>
+                                        <h5>{{ $t('telephone') }}</h5>
+                                        <p class="mb-2 contact-info">(+373) 611 377 74</p>
                                     </div>
                                 </div>
                             </div>
