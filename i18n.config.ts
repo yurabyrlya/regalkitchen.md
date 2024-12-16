@@ -58,6 +58,13 @@ export default defineI18nConfig(() => ({
         premiumKitchenRenovations: 'Premium Kitchen Renovations',
         highQualityKitchenFittings: 'High-Quality Kitchen Fittings',
         specializeInGermanKitchenDesigns: 'We specialize in delivering state-of-the-art German kitchen designs and installations.',
+        getInTouch: 'Get in touch',
+        contactUs: 'Contact us',
+        yourMessage: 'Your message',
+        submitNow: 'Submit now',
+        address: 'Address',
+        email: 'Email',
+        telephone: 'Telephone'
       },
       ro: {
         home: 'Acasă',
@@ -111,7 +118,14 @@ export default defineI18nConfig(() => ({
         modularKitchenInstallations: 'Instalații de Bucătării Modulare',
         premiumKitchenRenovations: 'Renovări Premium pentru Bucătării',
         highQualityKitchenFittings: 'Accesorii de Bucătărie de Înaltă Calitate',
-        specializeInGermanKitchenDesigns: 'Suntem specializați în livrarea celor mai moderne proiecte și instalări de bucătării germane.'
+        specializeInGermanKitchenDesigns: 'Suntem specializați în livrarea celor mai moderne proiecte și instalări de bucătării germane.',
+        getInTouch: 'Intră în contact',
+        contactUs: 'Contactați-ne',
+        yourMessage: 'Mesajul dumneavoastră',
+        submitNow: 'Trimite acum',
+        address: 'Adresă',
+        email: 'E-mail',
+        telephone: 'Telefon'
     },
       ru: {
         home: 'Главная',
@@ -165,7 +179,14 @@ export default defineI18nConfig(() => ({
         modularKitchenInstallations: 'Модульные установки кухонь',
         premiumKitchenRenovations: 'Премиум-ремонт кухонь',
         highQualityKitchenFittings: 'Кухонные аксессуары высокого качества',
-        specializeInGermanKitchenDesigns: 'Мы специализируемся на предоставлении современных немецких дизайнов кухонь и установок.'
+        specializeInGermanKitchenDesigns: 'Мы специализируемся на предоставлении современных немецких дизайнов кухонь и установок.',
+        getInTouch: 'Форма для связи',
+        contactUs: 'Свяжитесь с нами',
+        yourMessage: 'Ваше сообщение',
+        submitNow: 'Отправить сейчас',
+        address: 'Адрес',
+        email: 'Электронная почта',
+        telephone: 'Телефон'
       },
     }
   }))

@@ -12,8 +12,8 @@
                         {{ $t('welcome')}}
                     </small>
                     <h1 class="display-2 mb-4 animated bounceInDown text-primary text-cursive">{{ $t('passion') }} <br>{{ $t('kitchenWay') }}  </h1>
-                    <a href="#book" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">{{ $t('bookVisit') }}</a>
-                    <NuxtLink to="/kitchens" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">{{ $t('knowMore') }}</NuxtLink>
+                    <a href="#book" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-1 me-sm-4 animated bounceInLeft fz-14">{{ $t('bookVisit') }}</a>
+                    <NuxtLink to="/kitchens" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft fz-14">{{ $t('knowMore') }}</NuxtLink>
                 </div>
                 <div class="col-lg-5 col-md-12">
                     <img src="public/img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
