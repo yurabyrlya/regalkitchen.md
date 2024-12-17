@@ -64,7 +64,8 @@ export default defineI18nConfig(() => ({
         submitNow: 'Submit now',
         address: 'Address',
         email: 'Email',
-        telephone: 'Telephone'
+        telephone: 'Telephone',
+        learnMore: 'Learn More'
       },
       ro: {
         home: 'Acasă',
@@ -125,7 +126,8 @@ export default defineI18nConfig(() => ({
         submitNow: 'Trimite acum',
         address: 'Adresă',
         email: 'E-mail',
-        telephone: 'Telefon'
+        telephone: 'Telefon',
+        learnMore: 'Află mai multe'
     },
       ru: {
         home: 'Главная',
@@ -186,7 +188,8 @@ export default defineI18nConfig(() => ({
         submitNow: 'Отправить сейчас',
         address: 'Адрес',
         email: 'Электронная почта',
-        telephone: 'Телефон'
+        telephone: 'Телефон',
+        learnMore: 'Узнать больше'
       },
     }
   }))

@@ -195,7 +195,9 @@ function selectTabFromUrl(): void {
                 </div>
             </div>
             <div class="text-center wow bounceInUp mt-5" data-wow-delay="0.1s">
-                <ButtonPrimary title="Learn More" href="/downloads/catalog-2023.pdf"/>
+                <a class="btn btn-primary py-3 px-5 rounded-pill" href="/downloads/catalog-2023.pdf"> {{ $t('learnMore') }}
+                    <i class="fas fa-arrow-right ps-2"></i>
+                 </a>
             </div>
         </div>
     </div>
