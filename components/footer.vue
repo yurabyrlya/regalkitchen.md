@@ -10,10 +10,8 @@
                         </NuxtLink>
                         <p class="lh-lg mb-4 mt-3">{{ $t('specializeInGermanKitchenDesigns') }} </p>
                         <div class="footer-icon d-flex mb-4">
-                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/people/Regal-Kitchen/61570418261961" target="_blank" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/regalkitchen.md" target="_blank" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
