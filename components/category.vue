@@ -25,8 +25,8 @@ function selectTabFromUrl(): void {
     <div class="container-fluid menu bg-light py-6 my-6">
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our kitchens</small>
-                <h1 class="display-5 mb-5">Choose your kitchen.</h1>
+                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{ $t('ourKitchens') }}</small>
+                <h1 class="display-5 mb-5">{{ $t('mostPopularKitchens') }}</h1>
             </div>
             <div class="tab-class text-center">
                 <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
@@ -198,6 +198,9 @@ function selectTabFromUrl(): void {
                 <a class="btn btn-primary py-3 px-5 rounded-pill" target="_blank" href="/downloads/catalog-2023.pdf"> {{ $t('learnMore') }}
                     <i class="fas fa-arrow-right ps-2"></i>
                  </a>
+            </div>
+            <div class="text-center wow bounceInUp mt-5" data-wow-delay="0.1s">
+                <NuxtLink to="/book" class="btn btn-primary hero-btn btnborder-0 rounded-pill py-3 px-md-4 px-md-5 me-1 me-sm-2 mt-2 animated bounceInLeft  ">{{ $t('bookVisit') }}</NuxtLink>
             </div>
         </div>
     </div>

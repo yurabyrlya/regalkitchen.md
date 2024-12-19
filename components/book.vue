@@ -50,12 +50,6 @@
                                      :placeholder="$t('contactNumber')"
                                      >
                                 </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <input type="date" 
-                                    class="form-control border-primary p-2" 
-                                    placeholder="Select contact Date"
-                                    >
-                                </div>
                                 <div class="col-12 text-center">
                                     <button type="submit" 
                                     class="btn btn-primary px-5 py-3 rounded-pill">{{ $t('submit') }}</button>

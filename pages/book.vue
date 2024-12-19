@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <Hero title="Submit a Request"/>
+  <Hero :title="$t('submitRequest')"/>
   <Book/>
   <Footer/>
   <BackToTop/>

@@ -13,6 +13,7 @@
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/i18n": "^9.0.0-rc.2",
     "bootstrap": "^5.3.3",
+    "nodemailer": "^6.9.16",
     "nuxt": "^3.13.0",
     "sass": "^1.79.5",
     "vue": "latest",

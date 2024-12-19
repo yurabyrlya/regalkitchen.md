@@ -228,6 +228,11 @@ function isNotMobileScreen(): boolean {
           </template>
       </Carousel>
     </div>
+    <div class="row mt-5">
+      <div class="text-center wow bounceInUp mt-5" data-wow-delay="0.1s">
+        <NuxtLink to="/book" class="btn btn-primary hero-btn btnborder-0 rounded-pill py-3 px-md-4 px-md-5 me-1 me-sm-2 mt-2 animated bounceInLeft  ">{{ $t('bookVisit') }}</NuxtLink>
+    </div>
+    </div>
   </div>
 
   <Footer/>

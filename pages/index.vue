@@ -11,9 +11,12 @@
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">
                         {{ $t('welcome')}}
                     </small>
-                    <h1 class="display-2 mb-4 animated bounceInDown text-primary text-cursive">{{ $t('passion') }} <br>{{ $t('kitchenWay') }}  </h1>
-                    <a href="#book" class="btn btn-primary hero-btn btnborder-0 rounded-pill py-3 px-md-4 px-md-5 me-1 me-sm-4 animated bounceInLeft  ">{{ $t('bookVisit') }}</a>
-                    <NuxtLink to="/kitchens" class="btn btn-primary hero-btn border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">{{ $t('knowMore') }}</NuxtLink>
+                    <h1 class="display-5 mb-4 animated bounceInDown text-primary text-cursive">{{ $t('passion') }}  </h1>
+                    <h2 class="display-6 mb-4 animated bounceInDown text-primary text-cursive">{{ $t('kitchenWay') }}  </h2>
+                    <a href="#book" class="btn btn-primary hero-btn btnborder-0 rounded-pill py-3 px-md-4 px-md-5 me-1 me-sm-2 mt-2 animated bounceInLeft  ">{{ $t('bookVisit') }}</a>
+                    <NuxtLink to="/our-work" class="btn btn-light hero-btn border-0 rounded-pill py-3 px-4 px-md-5 mt-2 animated bounceInLeft">{{ $t('knowMore') }}
+                        <i class="fas fa-arrow-right ps-2"></i>
+                    </NuxtLink>
                 </div>
                 <div class="col-lg-5 col-md-12">
                     <img src="public/img/hero.png" class="img-fluid rounded animated zoomIn" alt="">

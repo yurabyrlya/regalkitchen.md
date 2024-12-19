@@ -8,23 +8,26 @@
                 </div>
                 <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{ $t('about') }}</small>
-                    <h1 class="display-5 mb-4"> {{ $t('weAreRegal') }} </h1>
+                    <h1 class="display-6 mb-4"> {{ $t('weAreRegal') }} </h1>
                     <p class="mb-4">{{ $t('description') }}</p>
                     <div class="row g-4 text-dark mb-5">
                         <div class="col-sm-6">
                             <i class="fas fa-share text-primary me-2"></i>{{ $t('kitchenServices') }}
                         </div>
                         <div class="col-sm-6">
-                            <i class="fas fa-share text-primary me-2"></i>{{ $t('support') }}
+                            <i class="fas fa-share text-primary me-2"></i>{{ $t('efficientInstall') }}
                         </div>
                         <div class="col-sm-6">
                             <i class="fas fa-share text-primary me-2"></i>{{ $t('customization') }}
                         </div>
                         <div class="col-sm-6">
-                            <i class="fas fa-share text-primary me-2"></i>{{ $t('efficientInstall') }}
+                            <i class="fas fa-share text-primary me-2"></i>{{ $t('support') }}
                         </div>
                     </div>
-                     <ButtonPrimary :title="$t('about')" href="/about"/>
+                     <ButtonPrimary v-show="showBtn" 
+                        :title="$t('about')" 
+                        href="/about"
+                     />
                 </div>
             </div>
         </div>
@@ -33,7 +36,8 @@
 </template>
 
 <script lang="ts" setup>
-
+  const route = useRoute();  
+ const showBtn: Boolean = route.name === 'index';
 </script>
 
 <style>

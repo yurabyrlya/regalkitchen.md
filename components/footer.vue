@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="footer-item">
-                        <h4 class="mb-4">{{ $t('whatWeOffer') }}</h4>
+                        <h4 class="mb-4">{{ $t('whatWeOfferFooter') }}</h4>
                         <div class="d-flex flex-column align-items-start">
                             <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>{{ $t('customDesign') }}</a>
                             <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>{{ $t('modularKitchenInstallations') }}</a>
@@ -32,7 +32,7 @@
                     <div class="footer-item">
                         <h4 class="mb-4">{{ $t('contact') }}</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Str. Chisinăului 64, Cricova, Moldova</p>
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Str. Chișinăului 64, Cricova, Moldova</p>
                             <p><i class="fa fa-phone-alt text-primary me-2"></i> (+373) 611 377 74</p>
                             <p><i class="fas fa-envelope text-primary me-2"></i> regalkitch3n@gmail.com</p>
                             <p><i class="fa fa-clock text-primary me-2"></i> {{ $t('support') }}</p>
