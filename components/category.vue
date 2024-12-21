@@ -24,12 +24,12 @@ function selectTabFromUrl(): void {
 <template>
     <div class="container-fluid menu bg-light py-6 my-6">
         <div class="container">
-            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <div class="text-center wow fadeInUp">
                 <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{ $t('ourKitchens') }}</small>
                 <h1 class="display-5 mb-5">{{ $t('mostPopularKitchens') }}</h1>
             </div>
             <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow fadeInUp">
                     <li class="nav-item p-2">
                         <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active" 
                           data-bs-toggle="pill"
@@ -60,23 +60,23 @@ function selectTabFromUrl(): void {
                 </ul>
                 <div class="tab-content">
                     <div id="tab-6" class="tab-pane fade show p-0 active">
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp" >
                             <span class="display-6 text-primary">Como 2188 Verde // Loft 2224 Dust Grey</span>
                             <NuxtImg src="/img/kitchens/modern/2188-2224.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp" >
                             <span class="display-6 text-primary">Sinus NCS</span>
                             <NuxtImg src="/img/kitchens/modern/2142.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp" >
                             <span class="display-6 text-primary">Sinus RAL</span>
                             <NuxtImg src="/img/kitchens/modern/4100-950-a10-farblich-bearbeitet.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp" >
                             <span class="display-6 text-primary">Como 2189 Azzurro // 2187 Elm</span>
                             <NuxtImg src="/img/kitchens/modern/2189-2187-a10-1.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/modern/arosa.jpg" class="img-fluid rounded" />
@@ -86,7 +86,7 @@ function selectTabFromUrl(): void {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Loft 2225 Cashmere</span>
@@ -96,7 +96,7 @@ function selectTabFromUrl(): void {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/modern/2187-2294-d10.jpg" class="img-fluid rounded" />
@@ -108,15 +108,15 @@ function selectTabFromUrl(): void {
                         </div>
                     </div>
                     <div id="tab-7" class="tab-pane fade show p-0">
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp">
                             <span class="display-6 text-primary">Sinus 4000-228 Steel blue // Nova 4394 Neve High Gloss</span>
                             <NuxtImg src="/img/kitchens/design/4000-228-4394-a10.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp" >
                             <span class="display-6 text-primary">Fresh 4316 Silk Grey // Loft 4223 Dark Black</span>
                             <NuxtImg src="/img/kitchens/design/4316-4223-a10-1.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/design/2282_2223_a10_quadrat.jpg" class="img-fluid rounded" />
@@ -127,7 +127,7 @@ function selectTabFromUrl(): void {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Florida Multicolour 2100 // Wallis 2700-322 Light</span>
@@ -137,7 +137,7 @@ function selectTabFromUrl(): void {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/design/2185-4296-a10.jpg" class="img-fluid rounded" />
@@ -147,7 +147,7 @@ function selectTabFromUrl(): void {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5" >
                             <div class="row">
                                 <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Porto 4264 Piano matt // 4262 Titanio matt</span>
@@ -159,19 +159,19 @@ function selectTabFromUrl(): void {
                         </div>
                     </div>
                     <div id="tab-9" class="tab-pane fade show p-0">
-                        <div class="col-lg-12  wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12  wow fadeInUp">
                             <span class="display-6 text-primary">Piemont 3460-227 Manhattan // Delta 2152 Cantaro Oak</span>
                             <NuxtImg src="/img/kitchens/country/3460-2152-a10.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp">
                             <span class="display-6 text-primary">Piemont 3460-233 Pearl // 3460-9999</span>
                             <NuxtImg src="/img/kitchens/country/3460-233-232-a10.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp">
                             <span class="display-6 text-primary">Normandie 3470-79 Magnolia</span>
                             <NuxtImg src="/img/kitchens/country/3470-a10.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/country/3460-2152-a10.jpg" class="img-fluid rounded" />
@@ -181,7 +181,7 @@ function selectTabFromUrl(): void {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
+                        <div class="col-lg-12 wow fadeInUp mt-5">
                             <div class="row">
                                 <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Normandie 3470-79 Magnolia</span>
@@ -194,12 +194,12 @@ function selectTabFromUrl(): void {
                     </div>
                 </div>
             </div>
-            <div class="text-center wow bounceInUp mt-5" data-wow-delay="0.1s">
+            <div class="text-center wow fadeInUp mt-5">
                 <a class="btn btn-primary py-3 px-5 rounded-pill" target="_blank" href="/downloads/catalog-2023.pdf"> {{ $t('learnMore') }}
                     <i class="fas fa-arrow-right ps-2"></i>
                  </a>
             </div>
-            <div class="text-center wow bounceInUp mt-5" data-wow-delay="0.1s">
+            <div class="text-center wow fadeInUp mt-5">
                 <NuxtLink to="/book" class="btn btn-primary hero-btn btnborder-0 rounded-pill py-3 px-md-4 px-md-5 me-1 me-sm-2 mt-2 animated bounceInLeft  ">{{ $t('bookVisit') }}</NuxtLink>
             </div>
         </div>

@@ -2,12 +2,12 @@
     <!-- Team Start -->
     <div class="container-fluid team py-6">
         <div class="container">
-            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Team</small>
                 <h1 class="display-5 mb-5">We have experienced chef Team</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
                         <img class="img-fluid rounded-top " src="public/img/team-1.jpg" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded">
                         <img class="img-fluid rounded-top " src="public/img/team-2.jpg" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded">
                         <img class="img-fluid rounded-top " src="public/img/team-3.jpg" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item rounded">
                         <img class="img-fluid rounded-top " src="public/img/team-4.jpg" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">

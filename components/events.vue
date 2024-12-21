@@ -2,12 +2,12 @@
     <!-- Events Start -->
     <div class="container-fluid event py-6">
         <div class="container">
-            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest Events</small>
                 <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
             </div>
             <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <li class="nav-item p-2">
                         <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
                             <span class="text-dark" style="width: 150px;">All Events</span>
@@ -39,7 +39,7 @@
                         <div class="row g-4">
                             <div class="col-lg-12">
                                 <div class="row g-4">
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="public/img/event-1.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
@@ -48,7 +48,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="public/img/event-2.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
@@ -57,7 +57,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="public/img/event-3.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
@@ -66,7 +66,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="public/img/event-4.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
@@ -75,7 +75,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="public/img/event-5.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
@@ -84,7 +84,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="public/img/event-6.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
@@ -93,7 +93,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="public/img/event-7.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
@@ -102,7 +102,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100" src="/public/img/event-8.jpg" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">

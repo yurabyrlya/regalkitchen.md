@@ -1,6 +1,6 @@
 <template>
     <!-- Book Us Start -->
-    <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container-fluid contact py-6" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-2">
