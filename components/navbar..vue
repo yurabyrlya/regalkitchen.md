@@ -36,22 +36,21 @@
                     </div>
                     <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
                     <NuxtLink to="/book" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">{{ $t('submitRequest') }}</NuxtLink>
-                    <div class="dropdown ms-auto" id="lang">
-                    <a 
-                        class="btn dropdown-toggle text-capitalize" 
+                    <div class="dropdown ms-auto">
+                        <button class="btn dropdown-toggle text-capitalize" 
                         type="button"
-                        id="dropdownMenuButton1" 
+                        id="dropdownMenuLang" 
                         data-bs-toggle="dropdown" 
                         aria-expanded="false"
-                    >
-                        {{ locale }}
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#" @click="setLocale('en')">English</a></li>
-                        <li><a class="dropdown-item" href="#" @click="setLocale('ro')">Romanian</a></li>
-                        <li><a class="dropdown-item" href="#" @click="setLocale('ru')">Russian</a></li>
-                    </ul>
-                </div>
+                        >
+                        {{ locale }}    
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLang">
+                            <li><a class="dropdown-item" href="#" @click="setLocale('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" @click="setLocale('ro')">Romanian</a></li>
+                            <li><a class="dropdown-item" href="#" @click="setLocale('ru')">Russian</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
