@@ -78,17 +78,17 @@ function selectTabFromUrl(): void {
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/modern/arosa.jpg" class="img-fluid rounded" />
                                 </div>
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center order-1 order-lg-2 mb-5">
                                     <span class="display-6 text-primary">Arosa 2296 Fenix Grigio Londra // Sinus 3000-245 Sage</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Loft 2225 Cashmere</span>
                                 </div>
                                 <div class="col-lg-6">
@@ -98,10 +98,10 @@ function selectTabFromUrl(): void {
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/modern/2187-2294-d10.jpg" class="img-fluid rounded" />
                                 </div>
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Como 2187 Elm // Arosa 2294 Fenix Nero</span>
                                 </div>
                             </div>
@@ -118,10 +118,10 @@ function selectTabFromUrl(): void {
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/design/2282_2223_a10_quadrat.jpg" class="img-fluid rounded" />
                                 </div>
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 d-flex order-1 order-lg-2 align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Como 2185 Walnut // Arosa
                                         4296 Fenix Grigio Londra</span>
                                 </div>
@@ -129,7 +129,7 @@ function selectTabFromUrl(): void {
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Florida Multicolour 2100 // Wallis 2700-322 Light</span>
                                 </div>
                                 <div class="col-lg-6">
@@ -139,17 +139,17 @@ function selectTabFromUrl(): void {
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <NuxtImg src="/img/kitchens/design/2282_2223_a10_quadrat.jpg" class="img-fluid rounded" />
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <NuxtImg src="/img/kitchens/design/2185-4296-a10.jpg" class="img-fluid rounded" />
                                 </div>
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Havanna 2282 Chocolate Oak // Loft 2223 Dark Black</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Porto 4264 Piano matt // 4262 Titanio matt</span>
                                 </div>
                                 <div class="col-lg-6">
@@ -159,7 +159,7 @@ function selectTabFromUrl(): void {
                         </div>
                     </div>
                     <div id="tab-9" class="tab-pane fade show p-0">
-                        <div class="col-lg-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-12  wow bounceInUp" data-wow-delay="0.1s">
                             <span class="display-6 text-primary">Piemont 3460-227 Manhattan // Delta 2152 Cantaro Oak</span>
                             <NuxtImg src="/img/kitchens/country/3460-2152-a10.jpg" class="img-fluid rounded mb-5 mt-5" />
                         </div>
@@ -173,17 +173,17 @@ function selectTabFromUrl(): void {
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 order-2 order-lg-1">
                                     <NuxtImg src="/img/kitchens/country/3460-2152-a10.jpg" class="img-fluid rounded" />
                                 </div>
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Piemont 3460-227 Manhattan // Delta 2152 Cantaro Oak</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 wow bounceInUp mt-5" data-wow-delay="0.1s">
                             <div class="row">
-                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
                                     <span class="display-6 text-primary">Normandie 3470-79 Magnolia</span>
                                 </div>
                                 <div class="col-lg-6">
