@@ -8,13 +8,13 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-7 col-md-12">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-2 px-md-4 py-1 mb-4 animated bounceInDown">
                         {{ $t('welcome')}}
                     </small>
-                    <h1 class="display-5 mb-4 animated bounceInDown text-primary text-cursive">{{ $t('passion') }}  </h1>
-                    <h2 class="display-6 mb-4 animated bounceInDown text-primary text-cursive">{{ $t('kitchenWay') }}  </h2>
+                    <h1 class="display-5 mb-4 animated bounceInDown text-primary">{{ $t('passion') }}  </h1>
+                    <h3 class="mb-4 animated bounceInDown text-primary">{{ $t('kitchenWay') }}  </h3>
                     <a href="#book" class="btn btn-primary hero-btn btnborder-0 rounded-pill py-3 px-md-4 px-md-5 me-1 me-sm-2 mt-2 animated bounceInLeft  ">{{ $t('bookVisit') }}</a>
-                    <NuxtLink to="/our-work" class="btn btn-light hero-btn border-0 rounded-pill py-3 px-4 px-md-5 mt-2 animated bounceInLeft">{{ $t('knowMore') }}
+                    <NuxtLink to="/our-work" class="btn btn-light hero-btn border-0 rounded-pill py-3 px-2 px-md-4 mt-2 animated bounceInLeft">{{ $t('knowMore') }}
                         <i class="fas fa-arrow-right ps-2"></i>
                     </NuxtLink>
                 </div>

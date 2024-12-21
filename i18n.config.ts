@@ -75,7 +75,7 @@ export default defineI18nConfig(() => ({
         contact: 'Contact',
         submitRequest: 'Trimite o cerere',
         welcome: 'Bine ați venit la Regal Kitchen',
-        passion: 'Creăm bucătării stilate și funcționale, care se potrivesc perfect în casa ta',
+        passion: 'Creăm bucătării stilate și funcționale, care se potrivesc perfect în casa ta.',
         kitchenWay: 'Calitate germană. Materiale ecologice. Tehnologii moderne.',
         bookVisit: 'Solicită un design-proiect',
         knowMore: 'Vezi lucrările noastre',

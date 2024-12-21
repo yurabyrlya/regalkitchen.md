@@ -20,7 +20,7 @@
         <div class="container">
             <nav class="navbar navbar-light navbar-expand-lg py-4">
                 <NuxtLink to="/" class="navbar-brand">
-                    <img width="250" src="/img/logos/regal_logo.svg"></img>
+                    <img class="logo" width="250" src="/img/logos/regal_logo.svg"></img>
                 </NuxtLink>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars text-primary"></span>

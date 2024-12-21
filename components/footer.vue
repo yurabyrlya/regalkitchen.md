@@ -6,7 +6,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="footer-item">
                         <NuxtLink to="/" class="navbar-brand">
-                            <img width="320" src="/img/logos/regal_logo.svg"></img>
+                            <img class="logo" width="320" src="/img/logos/regal_logo.svg"></img>
                         </NuxtLink>
                         <p class="lh-lg mb-4 mt-3">{{ $t('specializeInGermanKitchenDesigns') }} </p>
                         <div class="footer-icon d-flex mb-4">

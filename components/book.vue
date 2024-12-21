@@ -3,9 +3,9 @@
     <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-0">
-                <div class="col-2">
+                <div class="col-md-2">
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="border border-primary bg-light py-5 px-4">
                         <div class="text-center">
                             <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{ $t('submitRequest') }}</small>
@@ -50,7 +50,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-md-2">
                 </div>
             </div>
         </div>
