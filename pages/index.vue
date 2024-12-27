@@ -1,4 +1,5 @@
-<script setup lang="ts">
+<script lang="ts" setup>
+
 </script>
 
 <template>
@@ -19,7 +20,7 @@
                     </NuxtLink>
                 </div>
                 <div class="col-lg-5 col-md-12">
-                    <img src="public/img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
+                    <img :src="'img/hero.png'" class="img-fluid rounded animated zoomIn" alt="">
                 </div>
             </div>
         </div>

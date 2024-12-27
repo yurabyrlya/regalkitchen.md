@@ -83,12 +83,17 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts' // if you are using custom path, default
   },
   hub: {
-    analytics: true, //Default to false - Enables analytics for your project (coming soon).
+    analytics: false, //Default to false - Enables analytics for your project (coming soon).
     blob: true, // Default to false - Enables blob storage to store static assets, such as images, videos and more.
     cache: false, //Default to false - Enables cache storage to cache your server route responses or functions using Nitro's cachedEventHandler and cachedFunction
     database: false, //Default to false - Enables SQL database to store your application's data.
     kv: false, // Default to false - Enables Key-Value to store JSON data accessible globally.
     remote: false, //Default to false - Allows working with remote storage (database, kv, blob) from your deployed project.
     dir: '.data/hub' // Default to '.data/hub' - The directory used for storage (D1, KV, R2, etc.) in development mode.
-  }
+  },
+  runtimeConfig: {
+    public: {
+      blobURL: process.env.BLOB_URL,
+    },
+  },
 })

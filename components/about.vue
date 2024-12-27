@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeInUp" data-wow-duration="1s">
-                    <img src="public/img/about.jpg" class="img-fluid rounded" alt="">
+                    <img :src="'img/about.jpg'" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-7 wow fadeInUp" data-wow-duration="1s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{ $t('about') }}</small>
@@ -37,7 +37,7 @@
 
 <script lang="ts" setup>
   const route = useRoute();  
- const showBtn: Boolean = route.name === 'index';
+  const showBtn: Boolean = route.name === 'index';
 </script>
 
 <style>

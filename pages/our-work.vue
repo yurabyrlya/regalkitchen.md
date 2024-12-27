@@ -34,24 +34,25 @@ let thumbnailsConfig = {
   },
 };
 
+const imageUrl: string = "/img";
 const currentSlide: Ref = ref(0);
 const slideTo = (nextSlide: number) => (currentSlide.value = nextSlide);
-const imagesPath: string = "/img/images/img";
+const imagesPath: string = imageUrl + "/images/img";
 const imagesAmount: number = 98;
 
 const currentSlide2: Ref = ref(0);
 const slideTo2 = (nextSlide: number) => (currentSlide2.value = nextSlide);
-const imagesPath2: string = "/img/images2/img";
+const imagesPath2: string = imageUrl + "/images2/img";
 const imagesAmount2: number = 114;
 
 const currentSlide3: Ref = ref(0);
 const slideTo3 = (nextSlide: number) => (currentSlide3.value = nextSlide);
-const imagesPath3: string = "/img/images3/img";
+const imagesPath3: string = imageUrl + "/images3/img";
 const imagesAmount3: number = 78;
 
 const currentSlide4: Ref = ref(0);
 const slideTo4 = (nextSlide: number) => (currentSlide4.value = nextSlide);
-const imagesPath4: string = "/img/images4/img";
+const imagesPath4: string = imageUrl + "/images4/img";
 const imagesAmount4: number = 18;
 
 function beforeInit(): void {
@@ -80,7 +81,7 @@ function isNotMobileScreen(): boolean {
       >
       <Slide v-for="imageId3 in imagesAmount3" :key="imageId3">
         <div class="carousel__item">
-          <NuxtImg :src="imagesPath3 + imageId3 + '.jpg' "
+          <img :src="imagesPath3 + imageId3 + '.jpg' "
            class="image-fluid" 
            width="1300" 
            height="720"
@@ -96,7 +97,7 @@ function isNotMobileScreen(): boolean {
        >
         <Slide v-for="imageId3 in imagesAmount3" :key="imageId3">
           <div class="carousel__item" @click="slideTo3(imageId3 - 1)">
-            <NuxtImg :src="imagesPath3 + imageId3 + '.jpg' " 
+            <img :src="imagesPath3 + imageId3 + '.jpg' " 
               class="image-fluid"
                 width="450" 
                 height="200"
@@ -118,7 +119,7 @@ function isNotMobileScreen(): boolean {
       >
         <Slide v-for="imageId in imagesAmount4" :key="imageId">
           <div class="carousel__item">
-            <NuxtImg :src="imagesPath4 + imageId + '.jpg' "
+            <img :src="imagesPath4 + imageId + '.jpg' "
             class="image-fluid" 
             width="1300" 
             height="720"
@@ -134,7 +135,7 @@ function isNotMobileScreen(): boolean {
        >
           <Slide v-for="imageId in imagesAmount4" :key="imageId">
             <div class="carousel__item" @click="slideTo4(imageId - 1)">
-              <NuxtImg :src="imagesPath4 + imageId + '.jpg' " 
+              <img :src="imagesPath4 + imageId + '.jpg' " 
               class="image-fluid"
               width="450" 
               height="200"
@@ -157,7 +158,7 @@ function isNotMobileScreen(): boolean {
       >
       <Slide v-for="imageId2 in imagesAmount2" :key="imageId2">
         <div class="carousel__item">
-          <NuxtImg :src="imagesPath2 + imageId2 + '.jpg' "
+          <img :src="imagesPath2 + imageId2 + '.jpg' "
            class="image-fluid" 
            width="1300" 
            height="720"
@@ -174,7 +175,7 @@ function isNotMobileScreen(): boolean {
        >
         <Slide v-for="imageId2 in imagesAmount2" :key="imageId2">
           <div class="carousel__item" @click="slideTo2(imageId2 - 1)">
-            <NuxtImg :src="imagesPath2 + imageId2 + '.jpg' " 
+            <img :src="imagesPath2 + imageId2 + '.jpg' " 
               class="image-fluid"
                 width="450" 
                 height="200"
@@ -197,7 +198,7 @@ function isNotMobileScreen(): boolean {
       >
         <Slide v-for="imageId in imagesAmount" :key="imageId">
           <div class="carousel__item">
-            <NuxtImg :src="imagesPath + imageId + '.jpg' "
+            <img :src="imagesPath + imageId + '.jpg' "
               class="image-fluid" 
               width="1300" 
               height="720"
@@ -213,7 +214,7 @@ function isNotMobileScreen(): boolean {
        >
           <Slide v-for="imageId in imagesAmount" :key="imageId">
             <div class="carousel__item" @click="slideTo(imageId - 1)">
-              <NuxtImg :src="imagesPath + imageId + '.jpg' " 
+              <img :src="imagesPath + imageId + '.jpg' " 
               sizes="md:400px"
               class="image-fluid"
               width="450" 

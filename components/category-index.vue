@@ -27,7 +27,7 @@
                     <div id="tab-6" class="tab-pane fade show p-0 active wow fadeInUp" data-wow-duration="1s">
                         <div class="row g-5 align-items-center">
                         <div class="col-lg-5">
-                            <img src="public/img/modern.png" class="img-fluid rounded" alt="">
+                            <img :src="'img/modern.png'" class="img-fluid rounded" alt="">
                         </div>
                         <div class="col-lg-7">
                             <h1 class="display-5 mb-4">{{  $t('modernKitchens') }} </h1>
@@ -53,7 +53,7 @@
                     <div id="tab-7" class="tab-pane fade show p-0 wow fadeInUp" data-wow-duration="1s">
                         <div class="row g-5 align-items-center">
                         <div class="col-lg-5">
-                            <img src="public/img/design.png" class="img-fluid rounded" alt="">
+                            <img :src="'img/design.png'"class="img-fluid rounded" alt="">
                         </div>
                         <div class="col-lg-7">
                             <h1 class="display-5 mb-4">{{ $t('designerKitchens') }}</h1>
@@ -81,7 +81,7 @@
                     <div id="tab-9" class="tab-pane fade show p-0 wow fadeInUp" data-wow-duration="1s">
                         <div class="row g-5 align-items-center">
                         <div class="col-lg-5">
-                            <img src="public/img/cottage.png" class="img-fluid rounded" alt="">
+                            <img :src="'img/cottage.png'" class="img-fluid rounded" alt="">
                         </div>
                         <div class="col-lg-7">
                             <h1 class="display-5 mb-4">{{ $t('cottageKitchens') }}</h1>
@@ -112,7 +112,6 @@
 </template>
 
 <script lang="ts" setup>
-
 </script>
 
 <style>
