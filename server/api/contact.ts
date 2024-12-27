@@ -31,7 +31,7 @@ export default defineEventHandler(async (event) => {
   `;
   try {
     const msg = {
-      to: 'iuribirlea@gmail.com', 
+      to: 'regalkitch3n@gmail.com', 
       from: 'contact@regalkitchen.md',
       subject: emailSubbject,
       text: `Name: ${form.name}, Email: ${form.email}, Country: ${form.country}, Mobile: ${form.mobile}`,
