@@ -99,7 +99,7 @@
         try {
             const response = await $fetch<{success: boolean; message: string }>('/api/contact', {
                method: 'POST',
-               body: form.value 
+               body: {...form.value, type: 'request'},
             })
             if (response.success) {
                 successMessage.value = 'Your request has been sent successfully!';

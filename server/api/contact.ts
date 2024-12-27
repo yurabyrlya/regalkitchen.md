@@ -1,9 +1,8 @@
 import sgMail from '@sendgrid/mail';
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event); // Read the request body for POST data.
+  const form = await readBody(event); // Read the request body for POST data.
 
-  // Ensure POST method is used.
   if (event.node.req.method !== 'POST') {
     return {
       statusCode: 405,
@@ -14,13 +13,29 @@ export default defineEventHandler(async (event) => {
   // Set the SendGrid API key.
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
+  let emailSubbject = 'Contact';
+  if (form.type === 'request') {
+    emailSubbject = 'Formular de cerere';
+  }
+
+  const generateEmailHTML = (form): string => `
+    <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+      <h2 style="text-align: center; color: #0056b3;">${emailSubbject}</h2>
+      <p><strong>Name:</strong> ${form.name}</p>
+      <p><strong>Email:</strong> ${form.email}</p>
+      <p><strong>Country:</strong> ${form.country}</p>
+      <p><strong>Mobile:</strong> ${form.mobile}</p>
+      <hr>
+      <p style="font-size: 0.9em; color: #666;">This message was sent from your regalkitchen.md contact form.</p>
+    </div>
+  `;
   try {
     const msg = {
-      to: 'iuribirlea@gmail.com', // Replace with your recipient
-      from: 'test@regalkitchen.md', // Replace with your verified sender
-      subject: 'Sending with SendGrid via Nuxt Nitro',
-      text: body.text || 'Hello from Nuxt Nitro!',
-      html: body.html || '<strong>Hello from Nuxt Nitro!</strong>',
+      to: 'iuribirlea@gmail.com', 
+      from: 'contact@regalkitchen.md',
+      subject: emailSubbject,
+      text: `Name: ${form.name}, Email: ${form.email}, Country: ${form.country}, Mobile: ${form.mobile}`,
+      html: generateEmailHTML(form),
     };
 
     await sgMail.send(msg);
