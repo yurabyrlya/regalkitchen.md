@@ -92,8 +92,11 @@ export default defineNuxtConfig({
     dir: '.data/hub' // Default to '.data/hub' - The directory used for storage (D1, KV, R2, etc.) in development mode.
   },
   runtimeConfig: {
-    public: {
-      blobURL: process.env.BLOB_URL,
-    },
+    public: {},
   },
+  nitro: {
+    experimental: {
+      openAPI: true
+    }
+  }
 })
