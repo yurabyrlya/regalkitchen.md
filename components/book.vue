@@ -11,40 +11,52 @@
                             <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{ $t('submitRequest') }}</small>
                             <h1 class="display-5 mb-5">{{ $t('requestForm') }}</h1>
                         </div>
-                        <form action="#">
+                        <form @submit.prevent="handleSubmit">
                             <div class="row g-4 form">
                                 <div class="col-lg-6 col-md-12">
                                     <input type="name"
                                      class="form-control border-primary p-2" 
                                      :placeholder="$t('enterName')"
+                                     v-model="form.name"
                                      required
                                      >
                                 </div>
                                 <div class="col-lg-6 col-md-12">
                                     <input type="email"
-                                    class="form-control border-primary p-2" 
-                                    :placeholder="$t('enterEmail')"
-                                    required
+                                        class="form-control border-primary p-2" 
+                                        :placeholder="$t('enterEmail')"
+                                        v-model="form.email"
+                                        required
                                     >
                                 </div>    
                                 <div class="col-lg-6 col-md-12">
                                     <select class="form-select border-primary p-2"
-                                    required
+                                        v-model="form.country"
+                                        required
                                     >
                                         <option>{{ $t('selectCountry') }}</option>
-                                        <option selected value="1">Moldova</option>
-                                        <option value="2">UK</option>
+                                        <option selected value="Moldova">Moldova</option>
+                                        <option value="UK">UK</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
                                     <input type="mobile"
-                                     class="form-control border-primary p-2" 
-                                     :placeholder="$t('contactNumber')"
+                                        class="form-control border-primary p-2" 
+                                        :placeholder="$t('contactNumber')"
+                                        v-model="form.mobile"
                                      >
                                 </div>
                                 <div class="col-12 text-center">
                                     <button type="submit" 
                                     class="btn btn-primary px-5 py-3 rounded-pill">{{ $t('submit') }}</button>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div v-if="successMessage" class="alert alert-warning" role="alert">
+                                        {{ successMessage }}
+                                    </div>
+                                    <div v-if="errorMessage" class="alert alert-danger" role="alert">
+                                        {{ errorMessage }}
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -59,9 +71,50 @@
 </template>
 
 <script lang="ts" setup>
+    import { ref } from 'vue';
+
+    interface FormData {
+        name: string;
+        email: string;
+        country: string;
+        mobile: string;
+    }
+
+    const form = ref<FormData>({
+        name: '',
+        email:'',
+        country: 'Moldova',
+        mobile: '',
+    })
+
+    const isSubmitting = ref(false);
+    const successMessage = ref('');
+    const errorMessage = ref('');
+
+    const handleSubmit = async () => {
+        isSubmitting.value = true;
+        successMessage.value = '';
+        errorMessage.value = '';
+
+        try {
+            const response = await $fetch<{success: boolean; message: string }>('/api/contact', {
+               method: 'POST',
+               body: form.value 
+            })
+            if (response.success) {
+                successMessage.value = 'Your request has been sent successfully!';
+                form.value = { name: '', email: '', mobile: '', country: 'Moldova' }; // Reset form
+            } else {
+                errorMessage.value = response.message || 'Failed to send your request. Please try again later.';
+            }
+
+        } catch (error: unknown) {
+            console.error('Error submitting form:', error);
+            errorMessage.value = 'An unexpected error occurred. Please try again.';
+        } finally {
+            isSubmitting.value = false;
+        }
+
+    }
 
 </script>
-
-<style>
-
-</style>
