@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   // Ensure POST method is used.
   if (event.node.req.method !== 'POST') {
     return {
-      statusCode: 405,
+      statusCode: 200,
       message: 'Only POST requests are allowed',
     };
   }
