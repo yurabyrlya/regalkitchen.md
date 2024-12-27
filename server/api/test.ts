@@ -1,8 +1,11 @@
 import sgMail from '@sendgrid/mail';
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event); // Read the request body for POST data.
-
+  //const body = await readBody(event); // Read the request body for POST data.
+  return {
+    statusCode: 200,
+    message: 'Ok',
+  };
   // Ensure POST method is used.
   if (event.node.req.method !== 'POST') {
     return {
