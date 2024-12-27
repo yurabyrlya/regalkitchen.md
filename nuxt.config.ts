@@ -74,7 +74,7 @@ export default defineNuxtConfig({
      '~/assets/scss/main.scss',
     //'bootstrap/dist/css/bootstrap.min.css'
   ],
-  modules: ['vue3-carousel-nuxt', '@nuxt/image', '@nuxtjs/i18n'],
+  modules: ['vue3-carousel-nuxt', '@nuxt/image', '@nuxtjs/i18n', '@nuxthub/core'],
   vite: {},
   image: {
     // Options
