@@ -48,7 +48,12 @@
                                 </div>
                                 <div class="col-12 text-center">
                                     <button type="submit" 
-                                    class="btn btn-primary px-5 py-3 rounded-pill">{{ $t('submit') }}</button>
+                                        class="btn btn-primary px-5 py-3 rounded-pill"
+                                        :disabled="isSubmitting"
+                                    >
+                                         <span v-show="isSubmitting" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        {{ $t('submit') }}
+                                    </button>
                                 </div>
                                 <div class="col-12 text-center">
                                     <div v-if="successMessage" class="alert alert-warning" role="alert">
@@ -72,6 +77,9 @@
 
 <script lang="ts" setup>
     import { ref } from 'vue';
+    import { useI18n } from 'vue-i18n';
+
+    const { t } = useI18n();
 
     interface FormData {
         name: string;
@@ -97,20 +105,21 @@
         errorMessage.value = '';
 
         try {
-            const response = await $fetch<{success: boolean; message: string }>('/api/contact', {
+            const response = await $fetch<{success: boolean; message: string }>('/api/request', {
                method: 'POST',
                body: {...form.value, type: 'request'},
             })
             if (response.success) {
-                successMessage.value = 'Your request has been sent successfully!';
+                successMessage.value = t('submitSucessMessage');
                 form.value = { name: '', email: '', mobile: '', country: 'Moldova' }; // Reset form
             } else {
-                errorMessage.value = response.message || 'Failed to send your request. Please try again later.';
+                errorMessage.value = t('submitErrorMessage');
+                console.error(errorMessage.value);
             }
 
-        } catch (error: unknown) {
+        } catch (error: any) {
             console.error('Error submitting form:', error);
-            errorMessage.value = 'An unexpected error occurred. Please try again.';
+            errorMessage.value = t('submitErrorMessage');
         } finally {
             isSubmitting.value = false;
         }
