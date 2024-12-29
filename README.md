@@ -19,11 +19,10 @@ A Nuxt 3-powered modern website for [Regal Kitchen](https://www.regalkitchen.md)
 ```plaintext
 📦 regal-kitchen-website
 ├── 📁 components          # Reusable Vue components
-├── 📁 locales             # Localization files for i18n
 ├── 📁 pages               # Nuxt pages
 ├── 📁 public              # Static assets
 ├── 📁 server              # API logic (e.g., email API)
-├── 📁 utils               # Utility functions
+├── 📄 i18n.config.ts      # Localization i18n
 ├── 📄 nuxt.config.ts      # Nuxt configuration file
-├── 📄 package.json        # Project metadata and dependencies
+├── 📄 package.json        # Project dependencies
 └── 📄 README.md           # Documentation
