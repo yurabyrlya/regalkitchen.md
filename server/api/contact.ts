@@ -10,9 +10,6 @@ export default defineEventHandler(async (event) => {
     };
   }
 
-  // Set the SendGrid API key.
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
   let emailSubbject = 'Contact';
   if (form.type === 'request') {
     emailSubbject = 'Formular de cerere';
@@ -26,13 +23,18 @@ export default defineEventHandler(async (event) => {
       <p><strong>Country:</strong> ${form.country}</p>
       <p><strong>Mobile:</strong> ${form.mobile}</p>
       <hr>
-      <p style="font-size: 0.9em; color: #666;">This message was sent from your regalkitchen.md contact form.</p>
+      <p style="font-size: 0.9em; color: #666;">This message was sent from  <a href="regalkitchen.md">regalkitchen.md </a> contact form.</p>
     </div>
   `;
   try {
+
+    const { sendgridApiKey , contactFromEmail, contactToEmail } = useRuntimeConfig(event);
+    
+    sgMail.setApiKey(sendgridApiKey);
+
     const msg = {
-      to: 'regalkitch3n@gmail.com', 
-      from: 'contact@regalkitchen.md',
+      to: contactToEmail, 
+      from: contactFromEmail,
       subject: emailSubbject,
       text: `Name: ${form.name}, Email: ${form.email}, Country: ${form.country}, Mobile: ${form.mobile}`,
       html: generateEmailHTML(form),
