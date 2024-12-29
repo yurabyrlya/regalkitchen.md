@@ -1,75 +1,29 @@
-# Nuxt 3 Minimal Starter
+# Project Name: Regal Kitchen Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A Nuxt 3-powered modern website for Regal Kitchen featuring multilingual support, dynamic contact form integration, and email functionality via SendGrid.
 
-## Setup
+---
 
-Make sure to install the dependencies:
+## 🚀 Features
 
-```bash
-# npm
-npm install
+- **Nuxt 3 Framework**: Modern Vue-based framework for SSR and SSG.
+- **Multilingual Support**: Manage multiple languages using `@nuxtjs/i18n`.
+- **Email Integration**: Backend email handling using SendGrid.
+- **Responsive Design**: Fully optimized for all screen sizes.
+- **Cloudflare Pages Deployment**: Optimized for modern hosting solutions.
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## 📂 Project Structure
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+```plaintext
+📦 regal-kitchen-website
+├── 📁 components          # Reusable Vue components
+├── 📁 locales             # Localization files for i18n
+├── 📁 pages               # Nuxt pages
+├── 📁 public              # Static assets
+├── 📁 server              # API logic (e.g., email API)
+├── 📁 utils               # Utility functions
+├── 📄 nuxt.config.ts      # Nuxt configuration file
+├── 📄 package.json        # Project metadata and dependencies
+└── 📄 README.md           # Documentation
