@@ -1,6 +1,6 @@
 # Project Name: Regal Kitchen Website
 
-A Nuxt 3-powered modern website for Regal Kitchen featuring multilingual support, dynamic contact form integration, and email functionality via SendGrid.
+A Nuxt 3-powered modern website for [Regal Kitchen](https://www.regalkitchen.md) featuring multilingual support, dynamic contact form integration, and email functionality via SendGrid.
 
 ---
 
