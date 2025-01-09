@@ -15,6 +15,8 @@ const galleryConfig = {
 let thumbnailsConfig = {
   itemsToShow: 4,
   wrapAround: true,
+  pauseAutoplayOnHover: true,
+  autoplay: 3000,
   breakpoints: {
     // 200px and up
     200: {
