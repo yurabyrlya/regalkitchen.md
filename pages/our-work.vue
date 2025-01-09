@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 
-
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import { ref } from 'vue';
@@ -18,7 +17,7 @@ let thumbnailsConfig = {
   itemsToShow: 4,
   wrapAround: true,
   pauseAutoplayOnHover: true,
-  autoplay: 3000,
+  autoplay: 5000,
   breakpoints: {
     // 200px and up
     200: {
