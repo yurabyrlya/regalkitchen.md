@@ -1,10 +1,12 @@
 <script lang="ts" setup>
 
+
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import { ref } from 'vue';
 
 
+//https://vue3-carousel.ismail9k.com/config.html
 const galleryConfig = {
   itemsToShow: 1,
   mouseDrag: true,
