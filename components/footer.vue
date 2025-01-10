@@ -33,7 +33,6 @@
                             <p><i class="fa fa-map-marker-alt text-primary me-2"></i> <a href="https://www.google.com/maps/place/Strada+Chi%C8%99in%C4%83ului+64,+MD-2084,+Cricova,+Moldova/@47.1376472,28.8669753,17z/data=!3m1!4b1!4m6!3m5!1s0x40cbd89ac46b3867:0x8f9bc000e11b2578!8m2!3d47.1376472!4d28.8669753!16s%2Fg%2F11lg045gj7?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">  Str. Chișinăului 64, Cricova, Moldova</a></p>
                             <p><i class="fa fa-phone-alt text-primary me-2"></i> <a href="tel:+37361137774">(+373) 611 377 74</a></p>
                             <p><i class="fas fa-envelope text-primary me-2"></i> <a href="mailto:regalkitch3n@gmail.com">regalkitch3n@gmail.com</a> </p>
-                            <p><i class="fa fa-clock text-primary me-2"></i> {{ $t('support') }}</p>
                         </div>
                     </div>
                 </div>
