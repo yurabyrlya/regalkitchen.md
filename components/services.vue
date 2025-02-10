@@ -7,12 +7,12 @@
       <!-- Service Start -->
       <div class="container-fluid service py-6">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-duration="1s">
+            <div class="text-center">
                 <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">{{  $t('ourServices') }}</small>
                 <h1 class="display-6 mb-5">{{ $t('whatWeOffer') }}</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="bg-light rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="bg-light rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="bg-light rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="bg-light rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
