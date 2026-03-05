@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.8.1",
-    "@nuxthub/core": "npm:@nuxthub/core@nightly",
+    "@nuxthub/core": "0.9.1",
     "@nuxtjs/i18n": "^9.0.0-rc.2",
     "@sendgrid/mail": "^8.1.4",
     "bootstrap": "^5.3.3",

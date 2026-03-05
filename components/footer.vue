@@ -50,7 +50,7 @@
                     <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i><span class="text-capitalize">regal kitchen</span></a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    Developed by <a href="https://www.linkedin.com/in/iuri-birlea">Iuri Birlea </a>
+                    Developed by <a href="#">Tatiana Balaban (Or. Cahul, Rebublica Moldova)</a>
                 </div>
             </div>
         </div>
