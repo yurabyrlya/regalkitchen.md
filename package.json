@@ -2,6 +2,11 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balabantanea06-eng/regalkitchen.md"
+  },
+  "author": "balabantanea06-eng",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
