@@ -1,17 +1,44 @@
-# Project Name: Regal Kitchen Website
+# Regal Kitchen Website
 
-A Nuxt 3-powered modern website for [Regal Kitchen](https://www.regalkitchen.md) featuring multilingual support, dynamic contact form integration, and email functionality via SendGrid.
+Official website project for Regal Kitchen.
+
+Developed using Nuxt 3 with modern technologies for high performance and scalability.
+
+Project repository: https://github.com/balabantanea06-eng/regalkitchen.md
 
 ---
 
 ## 🚀 Features
 
-- **Nuxt 3 Framework**: Modern Vue-based framework for SSR and SSG.
-- **Multilingual Support**: Manage multiple languages using `@nuxtjs/i18n`.
-- **Email Integration**: Backend email handling using SendGrid.
-- **Responsive Design**: Fully optimized for all screen sizes.
-- **Cloudflare Pages Deployment**: Optimized for modern hosting solutions.
+- Nuxt 3 Framework – Modern Vue-based framework for fast websites.
+- Multilingual Support – Multiple languages using @nuxtjs/i18n.
+- Contact Form – Dynamic contact form with email sending.
+- Email Integration – Email functionality using SendGrid.
+- Responsive Design – Works on mobile, tablet, and desktop.
+- Cloudflare Pages Deployment – Optimized for fast hosting and global CDN.
 
+---
+
+## 🛠 Technologies
+
+- Nuxt 3
+- Vue 3
+- Bootstrap 5
+- SendGrid
+- Sass
+- Cloudflare Pages
+
+---
+
+## 🌐 Website
+
+Official site: https://www.regalkitchen.md
+
+---
+
+## 👨‍💻 Author
+
+GitHub: https://github.com/balabantanea06-eng
 ---
 
 ## 📂 Project Structure
