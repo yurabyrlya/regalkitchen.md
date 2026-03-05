@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "regalkitchen",
+  "main": "./.output/server/index.mjs",
+  "compatibility_date": "2026-03-05",
+  "assets": {
+    "directory": "./.output/public/",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "r2_buckets": [
+    {
+      "binding": "BLOB",
+      "bucket_name": "regalkitchen"
+    }
+  ],
+  "vars": {
+    "NUXT_HUB_CLOUDFLARE_ACCOUNT_ID": "3862a41b0f77d92908a45e1376f32ea9",
+    "NUXT_HUB_CLOUDFLARE_BUCKET_ID": "regalkitchen"
+  }
+}

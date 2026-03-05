@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: "2026-03-05",
   devtools: { enabled: true },
   app: {
     head: {
@@ -103,8 +103,10 @@ export default defineNuxtConfig({
 
   },
   nitro: {
-    experimental: {
-      openAPI: true
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true
     }
   }
 })
