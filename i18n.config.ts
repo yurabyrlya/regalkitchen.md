@@ -205,4 +205,4 @@ const config: I18nOptions = {
     }
   }
 
-export default config
+export default defineI18nConfig((): I18nOptions => config)
