@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2026-03-05",
+  compatibilityDate: "2026-03-06",
   devtools: { enabled: true },
   app: {
     head: {
@@ -74,7 +74,7 @@ export default defineNuxtConfig({
      '~/assets/scss/main.scss',
     //'bootstrap/dist/css/bootstrap.min.css'
   ],
-  modules: ['vue3-carousel-nuxt', '@nuxt/image', '@nuxtjs/i18n', '@nuxthub/core'],
+  modules: ['@nuxthub/core', 'vue3-carousel-nuxt', '@nuxt/image', '@nuxtjs/i18n'],
   vite: {},
   image: {
     // Options
