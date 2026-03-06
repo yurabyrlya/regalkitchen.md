@@ -1,4 +1,6 @@
-export default defineI18nConfig(() => ({
+import type { I18nOptions } from 'vue-i18n'
+
+const config: I18nOptions = {
     legacy: false,
     locale: 'ro',
     messages: {
@@ -201,5 +203,6 @@ export default defineI18nConfig(() => ({
         whatWeOfferFooter: 'Что мы предлагаем'
       },
     }
-  }))
-  
+  }
+
+export default config

@@ -50,7 +50,7 @@
                     <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i><span class="text-capitalize">regal kitchen</span></a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    Developed by <a href="#">Tatiana Balaban (Or. Cahul, Rebublica Moldova)</a>
+                    Developed by <a href="https://www.linkedin.com/in/%D1%82%D0%B0%D1%82%D1%8C%D1%8F%D0%BD%D0%B0-%D0%B1%D0%B0%D0%BB%D0%B0%D0%B1%D0%B0%D0%BD-2231ba1bb/">Tatiana Balaban (Or. Cahul, Rebublica Moldova)</a>
                 </div>
             </div>
         </div>

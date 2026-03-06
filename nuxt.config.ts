@@ -80,7 +80,17 @@ export default defineNuxtConfig({
     // Options
   },
   i18n: {
-    vueI18n: './i18n.config.ts' // if you are using custom path, default
+    locales: [
+      { code: 'en', name: 'English' },
+      { code: 'ro', name: 'Romanian' },
+      { code: 'ru', name: 'Russian' }
+    ],
+    defaultLocale: 'ro',
+    restructureDir: '',
+    vueI18n: './i18n.config.ts',
+    bundle: {
+      optimizeTranslationDirective: false
+    }
   },
   hub: {
     analytics: false, // Default to false - Enables analytics for your project (coming soon).
