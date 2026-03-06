@@ -3,6 +3,7 @@
   "name": "regalkitchen",
   "main": "./dist/server/index.mjs",
   "compatibility_date": "2026-03-06",
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
     "directory": "./dist/public/",
     "binding": "ASSETS"
